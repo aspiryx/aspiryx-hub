@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  nuxt:
+    build:
+      context: .
+    image: dev-studio
+    container_name: dev-studio
+    env_file:
+      - .env
+    ports:
+      - ${PORT}:3000
