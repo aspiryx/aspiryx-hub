@@ -71,7 +71,7 @@
   left: 50%;
   width: min(max(1000px, 80vw), 1400px);
 
-  animation: 3s 0.1s fade-in $easeOutCirc forwards;
+  animation: 1s 0s fade-in $easeOutCirc forwards;
 }
 
 .shape-top {
