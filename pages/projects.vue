@@ -1,5 +1,5 @@
 <template>
-  <div class="projects-page container flex flex-col gap-6 py-12">
+  <div class="projects-page container flex-col gap-6 py-12 hidden lg:flex">
     <bento-grid-row>
       <bento-grid-item title="Home" to="/" />
       <bento-grid-item title="PROJECT FILE" subtitle="001" />

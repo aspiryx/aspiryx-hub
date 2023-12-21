@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:bg-black dark:text-white h-full overflow-hidden">
+  <div class="dark:bg-black dark:text-white min-h-[100svh] overflow-hidden">
     <nuxt-layout>
       <nuxt-page />
     </nuxt-layout>
