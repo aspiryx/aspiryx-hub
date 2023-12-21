@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.3.2",
+    "@vueuse/nuxt": "^10.7.0",
     "sass": "^1.69.5"
   }
 }

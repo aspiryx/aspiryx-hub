@@ -3,13 +3,15 @@
     <nuxt-layout>
       <nuxt-page />
     </nuxt-layout>
+    <svg-filters />
+    <lcd-screen />
   </div>
 </template>
 
 <style lang="scss">
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .page-enter-from,

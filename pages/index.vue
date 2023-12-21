@@ -18,7 +18,7 @@
         <h1 class="username text-6xl text-white uppercase font-bold text-center z-10">
           ASPIRYX
         </h1>
-        <p class="w-full max-w-max uppercase text-sm font-normal text-opacity-50 text-white mt-3 text-center z-10">
+        <p class="w-full max-w-max uppercase text-md font-normal text-opacity-50 text-white mt-3 text-center z-10">
           Software Engineer | Visual Artist | Sound Researcher
         </p>
       </div>
@@ -41,6 +41,7 @@ main {
 
   .username-back {
     font-family: MetalMacabre;
+    filter: url(#filter-music);
   }
 
   .username {

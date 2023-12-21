@@ -7,8 +7,8 @@
         <nav class="space-x-8">
           <nav-link to="/">Home</nav-link>
           <nav-link to="/projects">Projects</nav-link>
-          <nav-link to="/store">Store</nav-link>
-          <nav-link to="/freebies">Freebies</nav-link>
+          <nav-link to="/locked">Store</nav-link>
+          <nav-link to="/locked">Freebies</nav-link>
         </nav>
       </div>
     </header>

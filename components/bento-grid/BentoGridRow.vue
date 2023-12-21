@@ -10,7 +10,7 @@
   transition: flex-basis 200ms ease;
 
   &:hover {
-    flex-basis: 150%;
+    flex-basis: 130%;
   }
 }
 </style>

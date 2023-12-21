@@ -67,9 +67,9 @@
 .shape-bottom {
   position: fixed;
   opacity: 0.8;
-  bottom: -100%;
+  bottom: -90%;
   left: 50%;
-  width: min(max(1000px, 80vw), 1400px);
+  width: min(max(1500px, 80vw), 1700px);
 
   animation: 1s 0s fade-in $easeOutCirc forwards;
 }
@@ -81,7 +81,7 @@
   opacity: 0;
   width: min(max(1000px, 80vw), 1700px);
   filter: blur(200px);
-  animation: 8s .1s fade-out $easeInOutCirc forwards;
+  animation: 3s fade-out $easeInOutCirc forwards;
 }
 
 .shape-2,
