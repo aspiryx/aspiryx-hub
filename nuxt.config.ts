@@ -15,7 +15,8 @@ export default defineNuxtConfig({
           name: "google-site-verification",
           content: process.env.NUXT_GOOGLE_SITE_VERIFICATION
         }
-      ]
+      ],
+      link: [{ rel: 'icon', type: 'image/svg', href: "/logo.svg" }]
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },

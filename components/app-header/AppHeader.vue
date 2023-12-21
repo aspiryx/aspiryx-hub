@@ -3,7 +3,7 @@
     class="header-container border-b-gray-800 border-b z-50 backdrop-blur-lg sticky top-0 w-full bg-black bg-opacity-20">
     <header class="container flex justify-between items-center m-auto px-4">
       <div class="flex gap-16">
-        <nuxt-link to="/" class="logo font-bold">. ASPIRYX</nuxt-link>
+        <nuxt-link to="/" class="logo font-bold flex gap-2"><img src="/logo.svg" /> . ASPIRYX</nuxt-link>
         <nav class="space-x-8 hidden md:block">
           <nav-link to="/">Home</nav-link>
           <nav-link to="/projects">Projects</nav-link>
