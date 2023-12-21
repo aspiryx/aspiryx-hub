@@ -20,7 +20,7 @@
   height: 100svh;
   z-index: 999;
   pointer-events: none;
-  background-image: url('/assets/img/2.png');
+  background-image: url('/assets/img/3.png');
   background-repeat: repeat;
   mix-blend-mode: color-burn;
   background-size: 3px;

@@ -107,7 +107,6 @@
     background: color-mix(in srgb, #433FFF 46%, transparent);
     filter: blur(100px);
     background: black;
-    // backdrop-filter: blur(10px);
   }
 
   .circ-1 {
