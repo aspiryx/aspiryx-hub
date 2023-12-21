@@ -1,0 +1,17 @@
+@import './fonts.scss';
+@import './easings.scss';
+
+$header-height: 72px;
+
+* {
+  font-smooth: always;
+  image-rendering: pixelated;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+
+  font-family: Inter;
+}
