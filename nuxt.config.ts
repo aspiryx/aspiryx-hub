@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
+      titleTemplate: '%s / ASPIRYX',
       meta: [
         {
           name: "google-site-verification",

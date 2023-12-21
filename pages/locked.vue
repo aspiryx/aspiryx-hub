@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  title: 'You Are Not Allowed To Be Here'
+})
+</script>
+
 <template>
   <main class="min-h-full">
     <img src="/assets/img/1.png" class="abr absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />

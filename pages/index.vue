@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  title: 'Home'
+})
+</script>
+
 <template>
   <main class="min-h-full">
     <section class="hero flex flex-col justify-between py-24">

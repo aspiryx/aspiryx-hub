@@ -1,3 +1,9 @@
+<script setup>
+useHead({
+  title: 'Projects'
+})
+</script>
+
 <template>
   <div class="projects-page container flex-col gap-6 py-12 hidden lg:flex">
     <bento-grid-row>
