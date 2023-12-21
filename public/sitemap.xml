@@ -5,10 +5,16 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://psoglav.vercel.app/</loc>
-    <lastmod>2023-12-16T21:09:01+00:00</lastmod>
+    <loc>https://aspiryx.vercel.app/</loc>
+    <lastmod>2023-12-22T21:09:01+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://aspiryx.vercel.app/projects</loc>
+    <lastmod>2023-12-22T21:09:01+00:00</lastmod>
+    <changefreq>daily</changefreq>
   </url>
 
 </urlset>
