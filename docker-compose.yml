@@ -4,8 +4,8 @@ services:
   nuxt:
     build:
       context: .
-    image: dev-studio
-    container_name: dev-studio
+    image: aspiryx-app
+    container_name: aspiryx-app
     env_file:
       - .env
     ports:
