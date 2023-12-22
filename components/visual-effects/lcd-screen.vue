@@ -24,6 +24,6 @@
   background-repeat: repeat;
   mix-blend-mode: color-burn;
   background-size: 3px;
-  animation: 40ms blink linear infinite forwards;
+  animation: 33.3ms blink linear infinite forwards;
 }
 </style>
