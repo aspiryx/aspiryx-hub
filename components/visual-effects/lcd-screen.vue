@@ -1,5 +1,11 @@
+<script setup>
+defineProps({
+  blinking: Boolean
+})
+</script>
+
 <template>
-  <div class="lcd-screen"></div>
+  <div class="lcd-screen" :class="{ blinking }"></div>
 </template>
 
 <style lang="scss" scoped>
@@ -24,6 +30,9 @@
   background-repeat: repeat;
   mix-blend-mode: color-burn;
   background-size: 3px;
-  animation: 33.3ms blink linear infinite forwards;
+
+  .blinking {
+    animation: 33.3ms blink linear infinite forwards;
+  }
 }
 </style>

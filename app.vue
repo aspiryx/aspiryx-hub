@@ -4,7 +4,7 @@
       <nuxt-page />
     </nuxt-layout>
     <svg-filters />
-    <lcd-screen />
+    <lcd-screen :blinking="false" />
   </div>
 </template>
 
