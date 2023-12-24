@@ -18,7 +18,7 @@ useSeoMeta({
       <nuxt-page />
     </nuxt-layout>
     <svg-filters />
-    <lcd-screen v-if="immersiveMode" />
+    <lcd-screen v-show="immersiveMode" />
   </div>
 </template>
 

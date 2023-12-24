@@ -1,12 +1,12 @@
 <script setup>
 const appStore = useAppStore()
-const { background } = storeToRefs(appStore)
+const { immersiveMode } = storeToRefs(appStore)
 </script>
 
 <template>
   <div class="default-layout h-full">
     <app-header />
-    <app-background v-if="background" />
+    <app-background :class="{ 'opacity-0': !immersiveMode }" />
     <div class="page-wrapper container m-auto">
       <slot />
     </div>

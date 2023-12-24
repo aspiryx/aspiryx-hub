@@ -16,18 +16,18 @@ export default defineNuxtConfig({
     dirs: ['stores']
   },
   alias: {
-    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
+    pinia: '/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs'
   },
   app: {
     head: {
       titleTemplate: '%s / ASPIRYX',
       meta: [
         {
-          name: "google-site-verification",
+          name: 'google-site-verification',
           content: process.env.NUXT_GOOGLE_SITE_VERIFICATION
         }
       ],
-      link: [{ rel: 'icon', type: 'image/svg', href: "/logo.svg" }]
+      link: [{ rel: 'icon', type: 'image/svg', href: '/logo.svg' }]
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
@@ -41,7 +41,8 @@ export default defineNuxtConfig({
     },
   },
   components: [
-    { path: "~/components", pathPrefix: false },
+    { path: '~/components', pathPrefix: false },
+    { path: '~/components/ui', prefix: 'Ui' }
   ],
   css: [],
   colorMode: {
