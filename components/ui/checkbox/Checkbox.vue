@@ -1,13 +1,18 @@
 <script setup>
-const modelValue = defineModel()
+defineEmits(['update:model-value'])
+
+const { modelValue } = defineProps({
+  modelValue: Boolean
+})
 </script>
 
 <template>
   <input
     v-bind="$attrs"
-    v-model="modelValue"
     class="checkbox"
     type="checkbox"
+    :checked="modelValue"
+    @change="$emit('update:model-value', $event.target.checked)"
   >
 </template>
 
@@ -34,9 +39,5 @@ const modelValue = defineModel()
     mix-blend-mode: lighten;
     box-shadow: 0 0 20px 5px color-mix(in srgb, var(--cl) 70%, transparent);
   }
-
-  // &:checked {
-  //   background-color: $accent-40;
-  // }
 }
 </style>

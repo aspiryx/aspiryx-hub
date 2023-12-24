@@ -1,7 +1,7 @@
 export const useAppStore = defineStore({
   id: 'app-store',
   state: () => ({
-    immersiveMode: false,
+    immersiveMode: true,
     background: false,
   }),
   actions: {
