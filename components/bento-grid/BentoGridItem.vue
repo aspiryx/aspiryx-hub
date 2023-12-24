@@ -32,8 +32,6 @@ export default {
     :class="{ corrupted }"
     class="bento-grid-item cursor-pointer group z-10 rounded-3xl relative select-none"
     v-bind="$attrs"
-    @mouseover="() => isHovered = true"
-    @mouseleave="() => isHovered = false"
   >
     <span
       class="title text-opacity-40 text-white group-hover:text-opacity-100 font-medium text-xl absolute bottom-4 left-4"
