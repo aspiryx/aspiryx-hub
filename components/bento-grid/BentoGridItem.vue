@@ -29,7 +29,6 @@ export default {
   <nuxt-link
     ref="bento-grid-item"
     :to="to"
-    :style="css"
     :class="{ corrupted }"
     class="bento-grid-item cursor-pointer group z-10 rounded-3xl relative select-none"
     v-bind="$attrs"
