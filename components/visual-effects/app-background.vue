@@ -1,22 +1,22 @@
 <template>
   <div class="app-background">
-    <div class="blue-circ shape-bottom rounded-full"></div>
-    <div class="blue-circ shape-top rounded-full"></div>
+    <div class="blue-circ shape-bottom rounded-full" />
+    <div class="blue-circ shape-top rounded-full" />
     <div class="shape-2 rounded-full">
-      <div class="circ circ-1"></div>
-      <div class="circ circ-2"></div>
-      <div class="circ circ-3"></div>
-      <div class="circ circ-4"></div>
-      <div class="circ circ-5"></div>
-      <div class="circ circ-6"></div>
-      <div class="circ circ-7"></div>
-      <div class="circ circ-8"></div>
+      <div class="circ circ-1" />
+      <div class="circ circ-2" />
+      <div class="circ circ-3" />
+      <div class="circ circ-4" />
+      <div class="circ circ-5" />
+      <div class="circ circ-6" />
+      <div class="circ circ-7" />
+      <div class="circ circ-8" />
     </div>
     <div class="shape-3 rounded-full">
-      <div class="circ circ-5"></div>
-      <div class="circ circ-6"></div>
-      <div class="circ circ-7"></div>
-      <div class="circ circ-8"></div>
+      <div class="circ circ-5" />
+      <div class="circ circ-6" />
+      <div class="circ circ-7" />
+      <div class="circ circ-8" />
     </div>
   </div>
 </template>

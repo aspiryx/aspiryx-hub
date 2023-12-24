@@ -6,11 +6,14 @@ useHead({
 
 <template>
   <main class="min-h-full">
-    <img src="/assets/img/1.png" class="abr absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
+    <img
+      src="/assets/img/1.png"
+      class="abr absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+    >
   </main>
 </template>
 
-<style lang="scss" scoped >
+<style lang="scss" scoped>
 @keyframes fly {
   0% {
     translate: 0 -10%;

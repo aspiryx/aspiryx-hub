@@ -4,7 +4,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="lcd-screen"></div>
+  <div class="lcd-screen" />
 </template>
 
 <style lang="scss" scoped>

@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     ['@pinia/nuxt', {
       autoImports: ['defineStore', 'acceptHMRUpdate']
     }],
+    '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts'
@@ -53,5 +54,5 @@ export default defineNuxtConfig({
       Inter: true,
       Michroma: true,
     }
-  }
+  },
 })  

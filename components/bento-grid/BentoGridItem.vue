@@ -1,9 +1,18 @@
 <script>
 export default {
   props: {
-    title: String,
-    to: String,
-    subtitle: String,
+    title: {
+      type: String,
+      default: null
+    },
+    to: {
+      type: String,
+      default: null
+    },
+    subtitle: {
+      type: String,
+      default: null
+    },
     corrupted: Boolean
   },
   setup() {
@@ -17,15 +26,24 @@ export default {
 </script>
 
 <template>
-  <nuxt-link :to="to" @mouseover="() => isHovered = true" @mouseleave="() => isHovered = false" :style="css"
-    :class="{ corrupted }" class="bento-grid-item cursor-pointer group z-10 rounded-3xl relative select-none"
-    ref="bento-grid-item" v-bind="$attrs">
+  <nuxt-link
+    ref="bento-grid-item"
+    :to="to"
+    :style="css"
+    :class="{ corrupted }"
+    class="bento-grid-item cursor-pointer group z-10 rounded-3xl relative select-none"
+    v-bind="$attrs"
+    @mouseover="() => isHovered = true"
+    @mouseleave="() => isHovered = false"
+  >
     <span
-      class="title text-opacity-40 text-white group-hover:text-opacity-100 font-medium text-xl absolute bottom-4 left-4">
+      class="title text-opacity-40 text-white group-hover:text-opacity-100 font-medium text-xl absolute bottom-4 left-4"
+    >
       {{ title }}
     </span>
     <span
-      class="title text-opacity-20 text-white group-hover:text-opacity-80 font-medium text-lg absolute bottom-4 right-4">
+      class="title text-opacity-20 text-white group-hover:text-opacity-80 font-medium text-lg absolute bottom-4 right-4"
+    >
       {{ subtitle }}
     </span>
   </nuxt-link>
