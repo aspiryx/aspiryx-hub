@@ -1,7 +1,12 @@
+<script setup>
+const appStore = useAppStore()
+const { background } = storeToRefs(appStore)
+</script>
+
 <template>
   <div class="default-layout h-full">
     <app-header />
-    <app-background />
+    <app-background v-if="background" />
     <div class="page-wrapper container m-auto">
       <slot />
     </div>

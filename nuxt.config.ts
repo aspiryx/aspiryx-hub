@@ -4,10 +4,19 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-gtag',
     '@vueuse/nuxt',
+    ['@pinia/nuxt', {
+      autoImports: ['defineStore', 'acceptHMRUpdate']
+    }],
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts'
   ],
+  imports: {
+    dirs: ['stores']
+  },
+  alias: {
+    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
+  },
   app: {
     head: {
       titleTemplate: '%s / ASPIRYX',

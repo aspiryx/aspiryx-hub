@@ -1,10 +1,15 @@
+<script setup>
+const appStore = useAppStore()
+const { immersiveMode } = storeToRefs(appStore)
+</script>
+
 <template>
   <div class="dark:bg-black dark:text-white min-h-[100svh] overflow-hidden">
     <nuxt-layout>
       <nuxt-page />
     </nuxt-layout>
     <svg-filters />
-    <lcd-screen :blinking="false" />
+    <lcd-screen v-if="immersiveMode" />
   </div>
 </template>
 
