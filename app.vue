@@ -1,6 +1,15 @@
 <script setup>
 const appStore = useAppStore()
 const { immersiveMode } = storeToRefs(appStore)
+
+useSeoMeta({
+  description: 'Digital gizmos made by @aspiryx',
+  ogDescription: 'Digital gizmos made by @aspiryx',
+  ogImage: '/img/V2.png',
+  twitterDescription: 'Digital gizmos made by @aspiryx',
+  twitterImage: '/img/V2.png',
+  twitterCard: 'summary'
+})
 </script>
 
 <template>
