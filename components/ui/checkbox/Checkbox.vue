@@ -1,5 +1,5 @@
 <script setup>
-const modelValue = defineModel({ type: Boolean, default: true })
+const modelValue = defineModel()
 </script>
 
 <template>
