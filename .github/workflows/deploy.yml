@@ -24,4 +24,4 @@ jobs:
             cd ${{ github.event.repository.name }}
             echo "${{ secrets.ENV_FILE }}" > .env
             docker stop aspiryx-app || true && docker rm aspiryx-app || true
-            SSL_CERT="${{ secrets.SSL_CERT }}" SSL_KEY="${{ secrets.SSL_KEY }}" docker compose up --build -d
+            docker compose up --build -d

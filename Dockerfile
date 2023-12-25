@@ -8,4 +8,4 @@ COPY . /usr/src/app/
 RUN bun i
 RUN bun run build
 
-CMD node .output/server/index.mjs
+CMD sh ./server.sh
