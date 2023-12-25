@@ -23,4 +23,5 @@ jobs:
             if cd ${{ github.event.repository.name }}; then git pull; else git clone ${{ github.event.repository.ssh_url }}; fi
             cd ${{ github.event.repository.name }}
             echo "${{ secrets.ENV_FILE }}" > .env
+            docker stop aspiryx-app || true && docker rm aspiryx-app || true
             docker compose up --build -d
