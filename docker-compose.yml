@@ -7,7 +7,7 @@ services:
     image: aspiryx-app
     container_name: aspiryx-app
     volumes:
-      - /home/psoglav/aspiryx.space/:/usr/src/app/certs/
+      - /etc/letsencrypt/live/aspiryx.space/:/usr/src/app/certs/
     env_file:
       - .env
     ports:
