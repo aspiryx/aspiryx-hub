@@ -1,5 +1,7 @@
 # Nuxt 3 Minimal Starter
 
+[![Deployment](https://github.com/psoglav/aspiryx.app/actions/workflows/deploy.yml/badge.svg)](https://github.com/psoglav/aspiryx.app/actions/workflows/deploy.yml)
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
