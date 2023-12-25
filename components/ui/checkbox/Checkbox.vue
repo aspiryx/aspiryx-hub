@@ -37,7 +37,6 @@ const { modelValue } = defineProps({
     translate: -50% -50%;
     background-color: var(--cl);
     mix-blend-mode: lighten;
-    box-shadow: 0 0 20px 5px color-mix(in srgb, var(--cl) 70%, transparent);
   }
 }
 </style>

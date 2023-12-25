@@ -1,6 +1,5 @@
 <script setup>
-const appStore = useAppStore()
-const { immersiveMode } = storeToRefs(appStore)
+const immersiveMode = useImmersiveMode()
 
 useSeoMeta({
   description: 'Digital gizmos made by @aspiryx',
