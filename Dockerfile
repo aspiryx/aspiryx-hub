@@ -8,6 +8,4 @@ COPY . /usr/src/app/
 RUN bun i
 RUN bun run build
 
-EXPOSE 8080
-
 CMD [ "node", ".output/server/index.mjs" ]
