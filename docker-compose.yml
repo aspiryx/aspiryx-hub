@@ -6,8 +6,9 @@ services:
       context: .
     image: aspiryx-app
     container_name: aspiryx-app
-    volumes:
-      - /etc/letsencrypt/live/aspiryx.space/:/usr/src/app/certs/
+    environment:
+      - NITRO_SSL_CERT="${SSL_CERT}"
+      - NITRO_SSL_KEY="${SSL_KEY}"
     env_file:
       - .env
     ports:
