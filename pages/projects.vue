@@ -8,8 +8,8 @@ useHead({
   <div class="projects-page container flex-col gap-6 py-12 hidden lg:flex">
     <bento-grid-row>
       <bento-grid-item
-        title="Home"
-        to="/"
+        title="ToDo"
+        to="https://todo.aspiryx.space/"
       />
       <bento-grid-item
         title="PROJECT FILE"
