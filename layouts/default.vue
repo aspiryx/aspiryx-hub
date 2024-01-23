@@ -1,11 +1,7 @@
-<script setup>
-const immersiveMode = useImmersiveMode()
-</script>
-
 <template>
   <div class="default-layout h-full">
     <app-header />
-    <app-background :class="{ 'opacity-0': !immersiveMode }" />
+    <app-background />
     <div class="page-wrapper container m-auto">
       <slot />
     </div>
