@@ -9,6 +9,14 @@ useSeoMeta({
   twitterImage: '/img/V2.png',
   twitterCard: 'summary'
 })
+
+onMounted(() => {
+  window.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') {
+      useRouter().push('/')
+    }
+  })
+})
 </script>
 
 <template>
