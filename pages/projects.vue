@@ -1,52 +1,42 @@
-<script setup>
+<script setup lang="ts">
 useHead({
   title: 'Projects'
 })
+
+type ProjectStatus = 'pending' | 'active' | 'not-started' | 'canceled'
+
+interface IProject {
+  id?: string
+  name: string
+  url: string
+  status: ProjectStatus
+  description?: string
+}
+
+const projects = ref<IProject[]>([
+  {
+     name: 'XCASTLE',
+     url: 'https://xc.aspiryx.space/',
+     status: 'pending'
+  },
+  {
+     name: 'TODO',
+     url: 'https://todo.aspiryx.space/',
+     status: 'active'
+  },
+])
 </script>
 
 <template>
   <div class="projects-page container flex-col gap-6 py-12 hidden lg:flex">
-    <bento-grid-row>
-      <bento-grid-item
-        title="ToDo"
-        to="https://todo.aspiryx.space/"
+    <grid-container>
+      <project-card
+        v-for="(item, i) of projects"
+        :key="i"
+        :title="item.name"
+        :to="item.url"
       />
-      <bento-grid-item
-        title="PROJECT FILE"
-        subtitle="001"
-      />
-      <bento-grid-item
-        title="PROJECT FILE"
-        subtitle="002"
-      />
-    </bento-grid-row>
-
-    <bento-grid-row>
-      <bento-grid-item
-        title="PROJECT FILE"
-        subtitle="003"
-      />
-      <bento-grid-item
-        title="PROJECT FILE"
-        subtitle="004"
-      />
-      <bento-grid-item
-        title="PROJECT FILE"
-        subtitle="005 [CORRUPTED]"
-        corrupted
-      />
-    </bento-grid-row>
-
-    <bento-grid-row>
-      <bento-grid-item
-        title="PROJECT FILE"
-        subtitle="006"
-      />
-      <bento-grid-item
-        title="PROJECT FILE"
-        subtitle="007"
-      />
-    </bento-grid-row>
+    </grid-container>
   </div>
 </template>
 

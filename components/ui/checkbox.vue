@@ -18,15 +18,17 @@ const { modelValue } = defineProps({
 
 <style lang="scss" scoped>
 .checkbox {
+  @apply border border-foreground;
+
   appearance: none;
   position: relative;
   width: 16px;
-  border: 1px white solid;
   border-radius: 3px;
   aspect-ratio: 1/1;
 
   &:checked::before {
-    --cl: color-mix(in srgb, white 40%, transparent);
+    @apply bg-foreground/20;
+
     content: "";
     display: block;
     position: absolute;
@@ -35,7 +37,6 @@ const { modelValue } = defineProps({
     left: 50%;
     top: 50%;
     translate: -50% -50%;
-    background-color: var(--cl);
     mix-blend-mode: lighten;
   }
 }

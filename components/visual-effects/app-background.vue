@@ -1,5 +1,5 @@
 <template>
-  <div class="app-background">
+  <div class="app-background fixed">
     <div class="blue-circ shape-bottom rounded-full" />
     <div class="blue-circ shape-top rounded-full" />
     <div class="shape-2 rounded-full">

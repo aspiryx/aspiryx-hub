@@ -11,14 +11,14 @@ const immersiveMode = useImmersiveMode()
         <logo />
         <nav-menu />
       </div>
-      <div class="immersive-mode flex items-center gap-2 select-none text-white text-opacity-90 hover:text-opacity-100 ">
-        <ui-label for="immersive-mode">
-          IMMERSIVE MODE
-        </ui-label>
+      <div class="immersive-mode flex items-center gap-2 select-none text-foreground/50 hover:text-foreground">
         <ui-checkbox
           id="immersive-mode"
           v-model="immersiveMode"
         />
+        <ui-label for="immersive-mode">
+          IMMERSIVE MODE
+        </ui-label>
       </div>
     </header>
   </div>

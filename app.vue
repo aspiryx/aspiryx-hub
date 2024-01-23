@@ -20,7 +20,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="dark:bg-black dark:text-white min-h-[100svh] overflow-hidden">
+  <div class="text-foreground min-h-[100svh] bg-background">
     <nuxt-layout>
       <nuxt-page />
     </nuxt-layout>
