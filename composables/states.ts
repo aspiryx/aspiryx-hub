@@ -1,1 +1,1 @@
-export const useImmersiveMode = () => useState<boolean>('immersive-mode', () => true)
+export const useImmersiveMode = () => useState<boolean>('immersive-mode', () => false)
