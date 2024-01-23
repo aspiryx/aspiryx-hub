@@ -10,12 +10,6 @@ useHead({
       <bento-grid-row class="max-h-40 gap-4 invisible lg:visible">
         <bento-grid-item
           class="rounded-e-md"
-          title="Home"
-          to="/"
-          subtitle="~/"
-        />
-        <bento-grid-item
-          class="rounded-md"
           title="Projects"
           to="/projects"
           subtitle="~/projects"
