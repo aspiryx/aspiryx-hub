@@ -14,11 +14,11 @@ interface IProject {
 }
 
 const projects = ref<IProject[]>([
-  {
-     name: 'XCASTLE',
-     url: 'https://xc.aspiryx.space/',
-     status: 'pending'
-  },
+  // {
+  //    name: 'XCASTLE',
+  //    url: 'https://xc.aspiryx.space/',
+  //    status: 'pending'
+  // },
   {
      name: 'TODO',
      url: 'https://todo.aspiryx.space/',
