@@ -17,8 +17,8 @@ useHead({
         <bento-grid-item
           class="rounded-s-md"
           title="Github"
-          to="https://github.com/psoglav"
-          subtitle="~/github/psoglav"
+          to="https://github.com/aspiryx"
+          subtitle="~/github/aspiryx"
           target="_blank"
         />
       </bento-grid-row>
