@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   modules: [
     'nuxt-gtag',
     '@vueuse/nuxt',
@@ -12,9 +13,11 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts'
   ],
+
   imports: {
     dirs: ['stores']
   },
+
   app: {
     head: {
       titleTemplate: '%s / ASPIRYX',
@@ -28,6 +31,7 @@ export default defineNuxtConfig({
     },
     pageTransition: { name: 'page', mode: 'out-in' }
   },
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -37,15 +41,19 @@ export default defineNuxtConfig({
       },
     },
   },
+
   components: [
     { path: '~/components', pathPrefix: false },
     { path: '~/components/ui', prefix: 'Ui' }
   ],
+
   css: [],
+
   colorMode: {
     preference: 'dark',
     classSuffix: ''
   },
+
   googleFonts: {
     families: {
       Roboto: true,
@@ -53,4 +61,6 @@ export default defineNuxtConfig({
       Michroma: true,
     }
   },
-})  
+
+  compatibilityDate: '2023-12-16',
+})
