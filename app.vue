@@ -1,5 +1,8 @@
 <script setup>
 const immersiveMode = useImmersiveMode()
+const colorMode = useColorMode()
+
+colorMode.value = 'dark'
 
 useSeoMeta({
   description: 'Digital gizmos made by @aspiryx',
