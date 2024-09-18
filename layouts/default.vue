@@ -1,7 +1,7 @@
 <template>
   <div class="default-layout h-full">
     <app-header />
-    <app-background />
+    <!-- <app-background /> -->
     <div class="page-wrapper container m-auto">
       <slot />
     </div>
