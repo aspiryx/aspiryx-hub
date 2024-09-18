@@ -33,12 +33,12 @@ export default {
     v-bind="$attrs"
   >
     <span
-      class="title group-hover:text-opacity-100"
+      class="title group-hover:text-opacity-100 absolute top-4 left-5"
     >
       {{ title }}
     </span>
     <span
-      class="subtitle text-zinc-600 group-hover:text-opacity-80 font-medium text-lg absolute bottom-4 right-4"
+      class="subtitle text-zinc-600 group-hover:text-opacity-80 font-medium text-lg absolute top-4 right-6"
     >
       {{ subtitle }}
     </span>
